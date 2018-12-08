@@ -1,56 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <title>Seemingly Random Musical Trivia</title>
-</head>
-<body>
-        
-        <div class="container">
-            <div class="jumbotron">
-                <h1 class="display-4">Trivia Game Title</h1>
-                
-              </div>
-                <div class="row">
-                   
-                </div>
-                  <div class="col-2" id="show-number">
-                      <button id="start">start</button>
-                  </div>
-                  <div class="col-8">
-                    column that holds the quiz
-                    <div id="triviaGame" id="myRadio">
-                  </div>
-                  <div class="col-2" >
-                      
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                   
-                  </div>
-                  <div class="col-5">
-                    <button id="submit">Submit Quiz</button>
-                  </div>
-                  <div class="col" >
-                    
-                    <div id="results"></div>
-                  </div>
-                </div>
-              </div>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <title>Seemingly Random Musical Trivia</title>
+</head>
+
+<body>
+
+  <body>
+    <h1>Seemingly Random Music Trivia</h1>
+
+
+    <form id="quiz" name="quiz">
+
+      <div id = triviaQuestions>
+      <p class="questions">Which artist sings the song 'Don't Watch Me Cry'?</p>
+      <input type="radio" id="jj" name="question1" value="Martin Jensen"> Martin Jensen<br>
+      <input type="radio" id="jj" name="question1" value="Jorja Smith"> Jorja Smith<br>
+      <input type="radio" id="jj" name="question1" value="Grace"> Grace<br>
+      <br>
+      <p class="questions">Which artist has a lotus flower tattooed on her hand?</p>
+      <input type="radio" id="jj" name="question2" value="Kehlani"> Kehlani<br>
+      <input type="radio" id="jj" name="question2" value="Demi Lovato"> Demi Lovato<br>
+      <input type="radio" id="jj" name="question2" value="Hailee Steinfeld"> Hailee Steinfeld<br>
+      <br>
+      <p class="questions">Which artist sings the song 'Heavy (feat. Kiiara)</p>
+      <input type="radio" id="jj" name="question3" value="Linkin Park"> Linkin Park<br>
+      <input type="radio" id="jj" name="question3" value="Billie Ellish"> Billie Ellish<br>
+      <input type="radio" id="jj" name="question3" value="Noah Cyrus"> Noah Cryus<br>
+      <br>
+      <p class="questions">Which artist's birth name is Gabriella Wilson</p>
+      <input type="radio" id="jj" name="question4" value="H.E.R."> H.E.R.<br>
+      <input type="radio" id="jj" name="question4" value="Lady Gaga"> Lady Gaga<br>
+      <input type="radio" id="jj" name="question4" value="Sia"> Sia<br>
+      <br>
+      <p class="questions">'Post Traumatic' by Mike Shinoda was written after the passing of:</p>
+      <input type="radio" id="jj" name="question5" value="XXXtentacion"> XXXtentacion<br>
+      <input type="radio" id="jj" name="question5" value="Chester Bennington"> Chester Bennington<br>
+      <input type="radio" id="jj" name="question5" value="Chris Cornell"> Chris Cornell<br>
+      <br>
+      <p class="questions">What is Incubus' most recently released album?</p>
+      <input type="radio" id="jj" name="question6" value="8"> 8<br>
+      <input type="radio" id="jj" name="question6" value="Make Yourself"> Make Yourself<br>
+      <input type="radio" id="jj" name="question6" value="Morning View"> Morning View<br>
+      <br>
+      <p class="questions">Which one of the following artists is not a christian rapper</p>
+      <input type="radio" id="jj" name="question7" value="Ivan B"> Ivan B<br>
+      <input type="radio" id="jj" name="question7" value="Nas"> Nas<br>
+      <input type="radio" id="jj" name="question7" value="NF"> NF<br>
+      <br>
+      <p class="questions">The song 'No Scope' is sung by which artist?</p>
+      <input type="radio" id="jj" name="question8" value="Swell"> Swell<br>
+      <input type="radio" id="jj" name="question8" value="Phora"> Phora<br>
+      <input type="radio" id="jj" name="question8" value="Joyner Lucas"> Joyner Lucas<br>
+      <br>
+      <p class="questions">Summer Walker sings which song?</p>
+      <input type="radio" id="jj" name="question9" value="All These Years"> All These Years<br>
+      <input type="radio" id="jj" name="question9" value="Body Count"> Body Count<br>
+      <input type="radio" id="jj" name="question9" value="Karma"> Karma<br>
+      <br>
+      <p class="questions">Tip Toe (feat. French Montana) is sung by:</p>
+      <input type="radio" id="jj" name="question10" value="Imagine Dragons"> Imagine Dragons<br>
+      <input type="radio" id="jj" name="question10" value="Jason Derulo"> Jason Derulo<br>
+      <input type="radio" id="jj" name="question10" value="Russ"> Russ<br>
+    </div>
+
+      <input id="button" type="button" value="I'm finished!" onclick="check();">
+
+
+    </form>
+
+    <div id="after_submit">
+      <p id="correct"></p>
+      <p id="wrong"></p>
+      <div id="timer"></div>
+
+    </div>
 
 
 
@@ -64,6 +102,7 @@
 
 
     <script src="assets/javascript/app.js"> </script>
-    
-</body>
+
+  </body>
+
 </html>
