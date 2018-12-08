@@ -1,0 +1,39 @@
+body{
+    background-image: url(../images/LeavittWells4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.jumbotron{
+    /*border: solid 5px rgb(120 69 157);*/
+    background-color: rgb(120 69 157);
+    border-radius: 25px;
+
+}
+h1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 5px 5px 9px rgb(224 138 178);
+}
+
+#triviaGame{
+    background-color: rgb(120 69 157);
+    border: solid 2px purple;
+    height: 1500px;
+    width: auto;
+    border-radius: 25px;
+}
+.rdbutton{
+    padding: 0px 0px 0px 500px;
+}
+button{
+    background-color: white;
+    
+}
+
+/*
+rgb(176 106 173)
+rgb(49 21 70)
+rgb(64 27 98)
+*/
