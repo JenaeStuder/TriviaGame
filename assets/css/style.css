@@ -1,3 +1,8 @@
+/* 
+ font-family: 'Unlock', cursive;
+font-family: 'Amatic SC', cursive;
+*/ 
+ 
  body{
     background-image: url(../images/LeavittWells4.jpg);
     background-size: 100%;
@@ -7,30 +12,42 @@
 }
 
 h1{
+    background-color: rgb(120 69 157);
+    border: dotted 2px white;
+    border-radius: 25px;
     color: white;
+    height:100px;
     text-align: center;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 70px;
     text-shadow: 5px 5px 9px rgb(224 138 178);
+    font-family: 'Unlock', cursive;
 }
 
 #triviaQuestions{
     background-color: rgb(120 69 157);
-    border: solid 2px purple;
-    height: 2300px;
+    border: dotted 2px white;
+    height: 3800px;
     width: 700px;
     border-radius: 25px;
     padding: 100px;
     margin: 10px 250px;
-    color: rgb(105 173 140);
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+   
     
 }
 .questions{
     text-align: center;
+    text-shadow: 2px 2px 4px rgb(105 173 140);
+    font-size: 45px;
+    
 }
-input{
-    padding: 0px 30px;
+#timer{
+    background-color: rgb(105 173 140);
 }
+
 
 
 /*
