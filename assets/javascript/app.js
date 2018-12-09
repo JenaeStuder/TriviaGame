@@ -70,7 +70,8 @@
 //  },
 //  ];
 
-$(document).ready(function() {
+
+startGame()
 
 function check() {
 
@@ -135,14 +136,14 @@ document.getElementById("correct").innerHTML = "You got " + correct + " correct.
 document.getElementById("wrong").innerHTML = "You got " + wrong + " wrong :(";
     }
 
-check() 
+ 
 
 
 var number = 60;
 
 var intervalId;
 
-$("#resume").on("click", run);
+$("#startGame").click(run);
 
 function run() {
   intervalId = setInterval(decrement, 1000);
@@ -158,7 +159,7 @@ function decrement() {
 
     stop();
 
-    alert("Time Up!");
+    alert("Times Up!");
   }
 }
 
@@ -167,9 +168,11 @@ function stop() {
   clearInterval(intervalId);
 }
 
+function startGame(){
+check();
 run();
+}
 
 
 
-});
 

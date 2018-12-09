@@ -46,6 +46,23 @@ h1{
 }
 #timer{
     background-color: rgb(105 173 140);
+    margin: 0px 100px 0px 1000px;
+    text-align: center;
+}
+#correct{
+    background-color: rgb(105 173 140);
+    color:white;
+    margin: 0px 490px;
+
+}
+#wrong{
+    background-color: rgb(105 173 140);
+    color:white;
+    margin: 0px 490px;
+
+}
+#button{
+    margin: 0px 520px;
 }
 
 
