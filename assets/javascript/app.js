@@ -119,6 +119,10 @@ $(document).ready(function () {
         if (number === 0) {
 
             stop();
+            check();
+            $("#after_submit").show()
+            $("#button").hide()
+            $("#triviaQuestions").hide()
 
             alert("Times Up!");
             console.log("decrement")

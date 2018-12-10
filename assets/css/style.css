@@ -70,9 +70,11 @@ h1{
 #timer{
     background-color:rgb(120 69 157) ;
     margin: 0px 100px 0px 1000px;
+    padding: 20px;
+    border: dotted 2px white;
     text-align: center;
-    box-shadow: 6px 6px rgb(105 173 140);
-   /* font-family: 'Amatic SC', cursive;*/
+    /*box-shadow: 6px 6px rgb(105 173 140);
+    font-family: 'Amatic SC', cursive;*/
     position: fixed;
     /* rgb(105 173 140)*/
 }
