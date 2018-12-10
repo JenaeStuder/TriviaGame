@@ -46,7 +46,7 @@ $(document).ready(function () {
             $("#button").hide()
             $("#triviaQuestions").hide()
 
-            alert("Times Up!");
+            alert("What? 60 Seconds wasn't long enough for you?");
             console.log("decrement")
         }
     }
