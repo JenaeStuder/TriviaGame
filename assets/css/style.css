@@ -13,7 +13,7 @@ font-family: 'Amatic SC', cursive;
 #opening{
     background-color: rgb(120 69 157);
     border: dotted 2px white;
-    height: 800px;
+    height: 600px;
     width: 700px;
     border-radius: 25px;
     padding: 100px;
@@ -36,7 +36,9 @@ h1{
     font-size: 70px;
     text-shadow: 5px 5px 9px rgb(224 138 178);
     font-family: 'Unlock', cursive;
+    margin: 20px;
 }
+
 
 #triviaQuestions{
     background-color: rgb(120 69 157);
@@ -58,6 +60,10 @@ h1{
     font-size: 45px;
     
 }
+#button{
+    margin: 20px 250px;
+    
+}
 #timer{
     background-color: rgb(105 173 140);
     margin: 0px 100px 0px 1000px;
@@ -66,7 +72,33 @@ h1{
     z-index: 3;
     /*position: absolute;*/
 }
-#correct{
+#after_submit{
+    background-color: rgb(120 69 157);
+    border: dotted 2px white;
+    height: 400px;
+    width: 700px;
+    border-radius: 25px;
+    padding: 100px;
+    margin: 10px 250px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+   
+
+}
+h2{
+    /* border: dotted 2px white;
+    border-radius: 25px; */
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 5px 5px 9px rgb(224 138 178);
+
+}
+/*#correct{
     background-color: rgb(105 173 140);
     color:white;
     margin: 0px 490px;
@@ -80,9 +112,7 @@ h1{
    
 
 }
-#button{
-    margin: 0px 520px;
-}
+
 
 
 

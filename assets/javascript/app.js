@@ -96,7 +96,7 @@ $(document).ready(function () {
         }) 
 
     //timer
-    function timer(){
+    
 
     var number = 60;
 
@@ -129,7 +129,7 @@ $(document).ready(function () {
         clearInterval(intervalId);
         console.log("stop")
     }
-};
+
 });
 
 
@@ -197,7 +197,7 @@ function check() {
 
     document.getElementById("after_submit").style.visibility = "visible";
     document.getElementById("correct").innerHTML = "You got " + correct + " correct.";
-    document.getElementById("wrong").innerHTML = "You got " + wrong + " wrong :(";
+    document.getElementById("wrong").innerHTML = "You got " + wrong + " wrong.";
 };
 
 check();
