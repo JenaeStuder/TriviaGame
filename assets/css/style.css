@@ -13,16 +13,18 @@ font-family: 'Amatic SC', cursive;
 #opening{
     background-color: rgb(120 69 157);
     border: dotted 2px white;
-    height: 600px;
+    height: 500px;
     width: 700px;
     border-radius: 25px;
     padding: 100px;
-    margin: 10px 250px;
+    margin: 10px 250px 100px 250px;
     color: white;
     font-family: 'Amatic SC', cursive;
     font-size: 35px;
    
-
+}
+#startGame{
+    margin: 20px 175px;
 }
 
 h1{
@@ -62,16 +64,17 @@ h1{
     
 }
 #button{
-    margin: 20px 250px;
+    margin: 20px 175px;
     
 }
 #timer{
-    background-color: rgb(105 173 140);
+    background-color:rgb(120 69 157) ;
     margin: 0px 100px 0px 1000px;
     text-align: center;
-    box-shadow: 6px 6px rgb(224 138 178);
-    z-index: 3;
-    /*position: absolute;*/
+    box-shadow: 6px 6px rgb(105 173 140);
+   /* font-family: 'Amatic SC', cursive;*/
+    position: fixed;
+    /* rgb(105 173 140)*/
 }
 #after_submit{
     background-color: rgb(120 69 157);

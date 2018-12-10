@@ -93,6 +93,7 @@ $(document).ready(function () {
             $("#after_submit").show()
             $("#button").hide()
             $("#triviaQuestions").hide()
+            stop()
         }) 
 
     //timer
@@ -118,7 +119,6 @@ $(document).ready(function () {
         if (number === 0) {
 
             stop();
-            check();
 
             alert("Times Up!");
             console.log("decrement")
@@ -202,4 +202,4 @@ function check() {
 };
 
 check();
-timer()
+
