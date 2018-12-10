@@ -5,22 +5,22 @@ $(document).ready(function () {
     window.onload = $("#after_submit").hide()
     window.onload = $("#button").hide()
 
-//the button click events that transfer you to the next parts of the quiz
+    //the button click events that transfer you to the next parts of the quiz
 
     $("#startGame").click(function () {
         $("#triviaQuestions").show();
         $("#button").show()
         $("#opening").hide()
-         });
-        $("#button").click(function(){
-            $("#after_submit").show()
-            $("#button").hide()
-            $("#triviaQuestions").hide()
-            stop()
-        }) 
+    });
+    $("#button").click(function () {
+        $("#after_submit").show()
+        $("#button").hide()
+        $("#triviaQuestions").hide()
+        stop()
+    })
 
     //timer
-    
+
     var number = 60;
 
     var intervalId;
@@ -119,7 +119,7 @@ function check() {
         correct++;
     } else
         wrong++;
-        console.log("check")
+    console.log("check")
 
 
     document.getElementById("after_submit").style.visibility = "visible";
