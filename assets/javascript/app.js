@@ -1,88 +1,11 @@
-//create a game that is capable of asking questions, generating right and wrong answers, calculating points,
-//and working in a time frame.
-//create a theme and research questions
-//create the HTML and CSS to match the theme.
-//what code needs to be written to generate questions
-//what code needs to be written to receive the answers
-//calculate score
-//reset once the timer is complete
-//alert the player once the game is done
-//tally the correct and incorrect answers and display them on the screen
-//add music clips
-//hide
-//iFrame video
-//call on postions in the objects to play the videos
-
-
-
-
-// var quizQuestions = [{
-
-//   question: "Which artist sings the song 'Don't Watch Me Cry'?",
-//   answers: ["Linkin Park", "Jorja Smith", "Grace"],
-//   correctAnswer: "Jorja Smith",
-// },
-//{
-//  question: "Which artist has a lotus flower tattooed on her hand?",
-//  answers: ["Kehlani", "Demi Lovato", "Hailee Steinfeld"],
-// correctAnswer: "Kehlani",
-//  },
-// {
-//    question: "Which artist sings the song 'Heavy (feat. Kiiara)",
-//   answers: ["Phora", "Billie Ellish", "Linkin Park"],
-//   correctAnswer: "Linkin Park",
-//  },
-// {
-//    question: "Which artist's birth name is Gabriella Wilson",
-//    answers: ["H.E.R.", "Lady Gaga", "Sia"],
-//   correctAnswer: "H.E.R.",
-
-// },
-//  {
-//   question: "'Post Traumatic' by Mike Shinoda was written after the passing of",
-//   answers: ["XXXtentacion", "Chester Bennington", "Chris Cornell"],
-//    correctAnswer: "Chester Bennington"
-// },
-// {
-//   question: "What is Incubus' most recently released album",
-//  answers: ["8", "Make Yourself", "Morning View"],
-//  correctAnswer: "8",
-//  },
-// {
-//    question: "Which one of the following artists is not a christian rapper",
-//    answers: ["Ivan B", "Nas", "NF"],
-//    correctAnswer: "Nas",
-// },
-// {
-//     question: "The song 'No Scope' is sung by",
-//   answers: ["Russ", "Phora", "Joyner Lucas"],
-//   correctAnswer: "Phora"
-// },
-//  {
-//   question: "Summer Walker sings which song?",
-//   answers: ["All These Years", "Body Count", "Karma"],
-//    correctAnswer: "Karma"
-// },
-// {
-//  question: "Tip Toe (feat. French Montana) is sung by:",
-//   answers: ["Imagine Dragons", "Jason Derulo", "Russ"],
-//  correctAnswer: "Jason Derulo"
-//  },
-//  ];
-
-// window.onload = $("#triviaQuestions").hide()
-// $("#startGame").click(function () {
-//     $("#opening").hide(function () {
-//         $("#triviaQuestions").show();
-
-//     });
-// });
-
+// at the opening of the window this shows which divs are showing
+// and which ones are hidden.
 $(document).ready(function () {
     window.onload = $("#triviaQuestions").hide()
     window.onload = $("#after_submit").hide()
     window.onload = $("#button").hide()
 
+//the button click events that transfer you to the next parts of the quiz
 
     $("#startGame").click(function () {
         $("#triviaQuestions").show();
@@ -98,7 +21,6 @@ $(document).ready(function () {
 
     //timer
     
-
     var number = 60;
 
     var intervalId;
@@ -139,7 +61,7 @@ $(document).ready(function () {
 
 
 
-
+//function that checks to see if the players answers are correct
 
 function check() {
 

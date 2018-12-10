@@ -67,16 +67,21 @@ h1{
     margin: 20px 175px;
     
 }
+.btn:hover{
+    background-color: rgb(105 173 140);
+    color:white;
+}
 #timer{
     background-color:rgb(120 69 157) ;
     margin: 0px 100px 0px 1000px;
     padding: 20px;
     border: dotted 2px white;
+    border-radius: 70px;
     text-align: center;
-    /*box-shadow: 6px 6px rgb(105 173 140);
-    font-family: 'Amatic SC', cursive;*/
+    height: 120px;
+    width: 120px;
     position: fixed;
-    /* rgb(105 173 140)*/
+    
 }
 #after_submit{
     background-color: rgb(120 69 157);
@@ -95,27 +100,11 @@ h1{
 
 }
 h2{
-    /* border: dotted 2px white;
-    border-radius: 25px; */
     font-size: 60px;
     color: white;
     text-align: center;
     font-weight: bold;
     text-shadow: 5px 5px 9px rgb(224 138 178);
-
-}
-/*#correct{
-    background-color: rgb(105 173 140);
-    color:white;
-    margin: 0px 490px;
-    
-
-}
-#wrong{
-    background-color: rgb(105 173 140);
-    color:white;
-    margin: 0px 490px;
-   
 
 }
 
