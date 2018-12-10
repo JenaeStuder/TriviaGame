@@ -87,9 +87,13 @@ $(document).ready(function () {
     $("#startGame").click(function () {
         $("#triviaQuestions").show();
         $("#button").show()
-        $("#after_submit").show()
         $("#opening").hide()
          });
+        $("#button").click(function(){
+            $("#after_submit").show()
+            $("#button").hide()
+            $("#triviaQuestions").hide()
+        }) 
 
     //timer
     function timer(){
