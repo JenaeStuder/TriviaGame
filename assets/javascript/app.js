@@ -118,6 +118,7 @@ $(document).ready(function () {
         if (number === 0) {
 
             stop();
+            check();
 
             alert("Times Up!");
             console.log("decrement")
