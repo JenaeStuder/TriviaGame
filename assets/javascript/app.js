@@ -70,8 +70,67 @@
 //  },
 //  ];
 
+// window.onload = $("#triviaQuestions").hide()
+// $("#startGame").click(function () {
+//     $("#opening").hide(function () {
+//         $("#triviaQuestions").show();
 
-startGame()
+//     });
+// });
+
+$(document).ready(function () {
+    window.onload = $("#triviaQuestions").hide()
+    window.onload = $("#after_submit").hide()
+    window.onload = $("#button").hide()
+
+
+    $("#startGame").click(function () {
+        $("#triviaQuestions").show();
+        $("#button").show()
+        $("#after_submit").show()
+        $("#opening").hide()
+         });
+
+    //timer
+    function timer(){
+
+    var number = 60;
+
+    var intervalId;
+
+    $("#startGame").click(run);
+
+    function run() {
+        intervalId = setInterval(decrement, 1000);
+        console.log("run")
+    }
+
+    function decrement() {
+
+        number--;
+
+        $("#timer").html("<h2>" + number + "</h2>");
+
+        if (number === 0) {
+
+            stop();
+
+            alert("Times Up!");
+            console.log("decrement")
+        }
+    }
+
+    function stop() {
+
+        clearInterval(intervalId);
+        console.log("stop")
+    }
+};
+});
+
+
+
+
 
 function check() {
 
@@ -86,93 +145,56 @@ function check() {
     var question9 = document.quiz.question9.value;
     var question10 = document.quiz.question10.value;
     var correct = 0;
-    var wrong =0;
+    var wrong = 0;
 
 
     if (question1 == "Jorja Smith") {
         correct++;
     } else
-        wrong ++;
+        wrong++;
     if (question2 == "Kehlani") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question3 == "Linkin Park") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question4 == "H.E.R.") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question5 == "Chester Bennington") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question6 == "8") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question7 == "Nas") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question8 == "Phora") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question9 == "Karma") {
         correct++;
-    }else
-        wrong ++;
+    } else
+        wrong++;
     if (question10 == "Jason Derulo") {
         correct++;
-    }else
-    wrong ++;
+    } else
+        wrong++;
+        console.log("check")
 
 
-document.getElementById("after_submit").style.visibility = "visible";
-document.getElementById("correct").innerHTML = "You got " + correct + " correct.";
-document.getElementById("wrong").innerHTML = "You got " + wrong + " wrong :(";
-    }
+    document.getElementById("after_submit").style.visibility = "visible";
+    document.getElementById("correct").innerHTML = "You got " + correct + " correct.";
+    document.getElementById("wrong").innerHTML = "You got " + wrong + " wrong :(";
+};
 
- 
-
-
-var number = 60;
-
-var intervalId;
-
-$("#startGame").click(run);
-
-function run() {
-  intervalId = setInterval(decrement, 1000);
-}
-
-function decrement() {
-
-  number--;
-
-  $("#timer").html("<h2>" + number + "</h2>");
-
-  if (number === 0) {
-
-    stop();
-
-    alert("Times Up!");
-  }
-}
-
-function stop() {
-
-  clearInterval(intervalId);
-}
-
-function startGame(){
 check();
-run();
-}
-
-
-
-
+timer()

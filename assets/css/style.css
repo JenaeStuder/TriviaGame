@@ -10,6 +10,20 @@ font-family: 'Amatic SC', cursive;
     background-position: right top;
   background-attachment: fixed;
 }
+#opening{
+    background-color: rgb(120 69 157);
+    border: dotted 2px white;
+    height: 800px;
+    width: 700px;
+    border-radius: 25px;
+    padding: 100px;
+    margin: 10px 250px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+   
+
+}
 
 h1{
     background-color: rgb(120 69 157);
@@ -48,17 +62,22 @@ h1{
     background-color: rgb(105 173 140);
     margin: 0px 100px 0px 1000px;
     text-align: center;
+    box-shadow: 6px 6px rgb(224 138 178);
+    z-index: 3;
+    /*position: absolute;*/
 }
 #correct{
     background-color: rgb(105 173 140);
     color:white;
     margin: 0px 490px;
+    
 
 }
 #wrong{
     background-color: rgb(105 173 140);
     color:white;
     margin: 0px 490px;
+   
 
 }
 #button{
